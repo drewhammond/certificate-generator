@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSR Generator Tool | Drew Hammond</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+          integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container text-xs-center">
+        <h1 class="display-4">CSR Generator</h1>
+        <p>This tool will help you generate a CSR for issuing SSL certificates. <strong>This tool is not yet functional
+            :(</strong></p>
+    </div>
+</div>
+<div class="container content-wrap">
+
+    <div class="col-sm-7">
+        <form>
+            <div class="form-group">
+                <label for="cn">Common Name</label>
+                <input type="text" class="form-control" id="cn" aria-describedby="cn_help"
+                       placeholder="example.com">
+                <small id="cn_help" class="form-text text-muted">This is the primary hostname or URL of the website you
+                    need a certificate for
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="o">Organization</label>
+                <input type="text" class="form-control" id="o" aria-describedby="o_help"
+                       placeholder="Acme Corporation">
+                <small id="o_help" class="form-text text-muted">Your company name</small>
+            </div>
+            <div class="form-group">
+                <label for="ou">Department</label>
+                <input type="text" class="form-control" id="ou" aria-describedby="ou_help"
+                       placeholder="IT Operations">
+                <small id="ou_help" class="form-text text-muted">The department responsible for managing certificate
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="e">Email</label>
+                <input type="text" class="form-control" id="e" aria-describedby="e_help"
+                       placeholder="IT Operations">
+                <small id="e_help" class="form-text text-muted">(Optional) Email address to include (@todo: Update these
+                    with descriptions from the RFC)
+                </small>
+            </div>
+            <div class="form-group">
+                <label for="l">City</label>
+                <input type="text" class="form-control" id="l" aria-describedby="l_help"
+                       placeholder="Miami">
+                <small id="l_help" class="form-text text-muted">City of office</small>
+            </div>
+            <!-- @todo: Dropdown list of states? -->
+            <div class="form-group">
+                <label for="ST">State/Province</label>
+                <input type="text" class="form-control" id="ST" aria-describedby="ST_help"
+                       placeholder="Miami">
+                <small id="ST_help" class="form-text text-muted">State or province of office</small>
+            </div>
+            <div class="form-group">
+                <label for="c">Country</label>
+                <select class="form-control" id="c">
+                    <option>(select)</option>
+                    <option id="US">United States</option>
+                    <option>@TODO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="key_size">Key Size</label>
+                <select class="form-control" id="key_size">
+                    <option value="1024">1024 Bit</option>
+                    <option value="2048">2048 Bit</option>
+                    <option value="4096">4096 Bit</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate Snippet</button>
+        </form>
+
+    </div>
+    <div class="col-sm-5">
+        <h2>Help</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, atque consectetur doloribus dolorum eos
+            fugit, impedit itaque iure magnam modi natus porro quam quasi quo reiciendis saepe sunt temporibus
+            vitae.</p>
+
+        <code>asdfsaf</code>
+    </div>
+</div>
+
+<footer id="site-footer">
+    <div class="container-fluid">
+        <div class="col-xs-12 col-sm-8">&copy; 2016 - Drew Hammond</div>
+        <div class="col-xs-12 col-sm-4">@todo</div>
+    </div>
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
+        integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
+        crossorigin="anonymous"></script>
+</body>
+</html>
